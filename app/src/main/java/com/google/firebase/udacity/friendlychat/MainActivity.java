@@ -198,6 +198,9 @@ public class MainActivity extends AppCompatActivity {
         defaultConfigMap.put(FRIENDLY_MSG_LENGTH_KEY, DEFAULT_MSG_LENGTH_LIMIT);
         mFirebaseRemoteConfig.setDefaults(defaultConfigMap);
         fetchConfig();
+
+        // Crash Reports with Firebase - Test Report
+        //FirebaseCrash.report(new Exception("My first Android non-fatal error"));
     }
 
     @Override
